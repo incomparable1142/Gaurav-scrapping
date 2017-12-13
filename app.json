@@ -1,0 +1,13 @@
+{
+  "name": "Flask python Heroku Login App",
+  "description": "Flask Heroku Login App",
+  "keywords": [
+    "Flask",
+    "python",
+    "sample"
+  ],
+  "repository": "https://github.com/incomparable/Gaurav-scrapping.git",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
