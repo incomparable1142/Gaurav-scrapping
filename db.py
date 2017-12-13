@@ -21,9 +21,11 @@ class Mdb:
         # local db
         # conn_str = "mongodb://%s:%s@%s:%d/%s" \
         #      % (DB_USER, DB_PASS, DB_HOST, DB_PORT, AUTH_DB_NAME)
-        conn_str = 'mongodb://scrapuser:scrappass@ds257495.mlab.com:57495/scrap_utils'
+        # conn_str = 'mongodb://scrapuser:scrappass@ds257495.mlab.com:57495/scrap_utils'
+	conn_str = 'mongodb://scrapuser:scrappass@ds125565.mlab.com:25565/scrapping'
+	# mongodb://<dbuser>:<dbpassword>@ds125565.mlab.com:25565/scrapping
         client = MongoClient(conn_str)
-        self.db = client['scrap_utils']
+        self.db = client['scrapping']
 
     def indeed_scraper_data(self, title, location, sal, summary):
         try:
